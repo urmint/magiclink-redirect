@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Redirecting...</title>
+  <script>
+    // Get token from URL hash
+    const hash = window.location.hash; // #access_token=...&refresh_token=...
+    // Redirect to your app's deep link with hash
+    window.location.href = 'com.supabasedemorn://login-callback' + hash;
+  </script>
+</head>
+<body>
+  Redirecting to app...
+</body>
+</html>
